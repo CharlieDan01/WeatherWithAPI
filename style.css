@@ -1,0 +1,48 @@
+body { font-family: sans-serif; text-align: center; padding: 2rem; background: #e0f7fa; }
+
+input { padding: 0.5rem; font-size: 1rem; }
+
+button { padding: 0.5rem 1rem; margin-left: 0.5rem; }
+    .resultado { margin-top: 1rem; font-size: 1.2rem; }
+
+
+    #sugerencias {
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  margin-top: 2px;
+}
+
+#sugerencias div:hover {
+  background-color: #eee;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* Ajusta según tu diseño */
+}
+
+#cityInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 16px;
+}
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Weather with API OpenWeather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>See the Weather</h1>
+
+  <div class="search-container">
+    <input type="text" class="form-control" id="ciudad" placeholder="Write a City Name">
+    <div id="suggestions" class="suggestions"></div>
+  </div>
+
+  <button type="button" class="btn btn-outline-primary btn-lg" onclick="buscarCiudad()">Search</button>
+  <div class="resultado" id="resultado"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+    <script src="geocoding.js"></script>
+    <script>
+    // Opcional: si usas botón buscar
+    function buscarCiudad() {
+        const ciudad = document.getElementById('ciudad').value;
+        obtenerClimaPorCiudad(ciudad);
+    }
+    </script>
+
+</body>
+</html>
